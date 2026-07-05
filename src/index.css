@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-artistic-ivory: #FAF9F6;
+  --color-artistic-charcoal: #1A1A1A;
+  --color-artistic-gold: #D4AF37;
+  --color-artistic-muted-gold: #C5A059;
+  --color-artistic-pink: #FADADD;
+  --color-artistic-peach: #E5B299;
+
+  --color-gold-50: #faf7f2;
+  --color-gold-100: #f5eedf;
+  --color-gold-200: #ebdcb9;
+  --color-gold-300: #dfc58a;
+  --color-gold-400: #d2aa5c;
+  --color-gold-500: #D4AF37; /* Adjusted to design gold */
+  --color-gold-600: #C5A059; /* Adjusted to design muted gold */
+  --color-gold-700: #8e5f25;
+  
+  --color-rosegold-50: #FAF9F6; /* ivory-ish */
+  --color-rosegold-100: #fbf5f4;
+  --color-rosegold-200: #f4ded8;
+  --color-rosegold-300: #FADADD; /* Adjusted to design rose pink */
+  --color-rosegold-400: #E5B299; /* Adjusted to design peach */
+  --color-rosegold-500: #D4AF37; /* Unified with artistic gold */
+  --color-rosegold-600: #C5A059;
+  --color-rosegold-700: #904d50;
+  --color-rosegold-800: #743a3d;
+  --color-rosegold-900: #5c2d2f;
+  
+  --color-pink-50: #fdf5f6;
+  --color-pink-100: #fbebee;
+  --color-pink-200: #FADADD;
+}
+
+@utility glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@utility glass-dark {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-luxury-gradient-light {
+  background: linear-gradient(135deg, #fdfaf9 0%, #f5eedf 50%, #faf1ee 100%);
+}
+
+@utility bg-luxury-gradient-dark {
+  background: linear-gradient(135deg, #0d0d0d 0%, #151515 50%, #1a1213 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c27d80;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aa6266;
+}
